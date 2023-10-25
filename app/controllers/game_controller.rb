@@ -40,11 +40,11 @@ class GameController < ApplicationController
     @computer_move = moves.sample
 
     if @computer_move == "scissors"
-      @outcome = "We won!"
-    elsif @computer_move == "paper"
-      @outcome = "We lost!"
-    else
       @outcome = "We tied!"
+    elsif @computer_move == "paper"
+      @outcome = "We won!"
+    else
+      @outcome = "We lost!"
     end
 
     render({:template => "game_templates/play_scissors"})

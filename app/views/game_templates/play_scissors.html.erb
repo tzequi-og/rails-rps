@@ -1,30 +1,10 @@
 <!-- play_scissors.erb -->
 
-<head>
-  <title>Rock play</title>
-
-  <style>
-    h2.win{
-      color: green
-    }
-
-    h2.lose{
-      color:red
-    }
-  </style>
-</head>
-
 <h2>We played scissors!</h2>
 
 <h2>They played <%= @computer_move %>!</h2>
 
-<% if @computer_move == "scissors"%>
-  <h2>We tied!</h2>
-<% elsif @computer_move == "paper"%>
-  <h2 class="win">We won!</h2>
-<% elsif @computer_move == "rock"%>
-  <h2 class="lose">We lost!</h2>
-<% end %>
+<%= @outcome %>
 
 <div class="home">
     <div><a href="/">Rules</a></div>
