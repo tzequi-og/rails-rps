@@ -1,4 +1,4 @@
-<!-- play_rock.erb -->
+<!-- play_scissors.erb -->
 
 <head>
   <title>Rock play</title>
@@ -14,16 +14,16 @@
   </style>
 </head>
 
-<h2>We played rock!</h2>
+<h2>We played scissors!</h2>
 
 <h2>They played <%= @computer_move %>!</h2>
 
 <% if @computer_move == "scissors"%>
-  <h2 class="win">We won!</h2>
-<% elsif @computer_move == "paper"%>
-  <h2 class="lose">We lost!</h2>
-<% elsif @computer_move == "rock"%>
   <h2>We tied!</h2>
+<% elsif @computer_move == "paper"%>
+  <h2 class="win">We won!</h2>
+<% elsif @computer_move == "rock"%>
+  <h2 class="lose">We lost!</h2>
 <% end %>
 
 <div class="home">
