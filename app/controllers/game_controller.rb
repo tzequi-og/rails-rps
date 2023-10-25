@@ -1,6 +1,7 @@
 class GameController < ApplicationController
   def user_played_rock
-    render({:plain => "hi!"})
+    render({:template => "game_templates/play_rock"})
+
   end
 
 end
