@@ -1,5 +1,5 @@
 <!-- play_rock.erb -->
-
+<!--
 <head>
   <title>Rock play</title>
 
@@ -12,19 +12,13 @@
       color:red
     }
   </style>
-</head>
+</head> -->
 
 <h2>We played rock!</h2>
 
 <h2>They played <%= @computer_move %>!</h2>
 
-<% if @computer_move == "scissors"%>
-  <h2 class="win">We won!</h2>
-<% elsif @computer_move == "paper"%>
-  <h2 class="lose">We lost!</h2>
-<% elsif @computer_move == "rock"%>
-  <h2>We tied!</h2>
-<% end %>
+<h2> <%= @outcome %> </h2>
 
 <div class="home">
     <div><a href="/">Rules</a></div>
